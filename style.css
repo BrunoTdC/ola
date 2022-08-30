@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Staatliches&display=swap');
+@keyframes animation1 {
+    from{
+        opacity: 0;
+        margin: 0;
+    }
+    to{
+        opacity: 1 ;
+        margin-right: 220px;
+    }
+}
+@keyframes animation2 {
+    from{
+        opacity: 0;
+        margin: 0;
+    }
+    to{
+        opacity: 1 ;
+        margin-right: 180px;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.fundo{
+    font-family: 'Dosis', sans-serif;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 60px;
+}
+header{
+    padding-bottom: 60px;
+}
+header .container .row .col-8 h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.596);
+}
+header .container .row .col-4{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    height: 100px;
+    margin-top: 15%;
+    margin-right: 0.5%;
+    color: #66417A;
+}
+.navbar .container .collapse .navbar-nav{
+    margin-left: auto;
+}
+.navbar .container .navbar-brand{
+    width: 282px;
+    height: 110px;
+    background-image: url(LOGO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -3000px;
+}
+.navbar .container a{
+    color: #66417A;
+}
+.botao{
+    border: 2px solid #66417A !important;
+}
+.botao:hover{
+    color: white !important;
+    background-color: #66417A !important;
+}
+.botao2{
+    background-color: #0EA091 !important;
+    border: 2px solid #0EA091 !important;
+}
+.botao2:hover{
+    background-color: #097267 !important;
+    
+}
+header .container .row .ani1{
+   animation: animation1;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-direction: inherit;
+   opacity: 1 ;
+   margin-right: 220px;
+   padding: 10px;
+}
+header .container .row .ani2{
+    animation: animation2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    margin-left: 180px;
+    opacity: 1 ;
+}
+ 
