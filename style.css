@@ -25,7 +25,7 @@
 }
 .fundo{
     font-family: 'Dosis', sans-serif;
-    background-image: url(bg1.jpg);
+    background-image: url(bg1_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ header .container .row .col-4{
 }
 header .container .row .ani1{
    animation: animation1;
-   animation-duration: 5s;
+   animation-duration: 4s;
    animation-iteration-count: 1;
    animation-direction: inherit;
    opacity: 1 ;
@@ -87,10 +87,21 @@ header .container .row .ani1{
 }
 header .container .row .ani2{
     animation: animation2;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-direction: inherit;
     margin-left: 180px;
     opacity: 1 ;
 }
- 
+
+@media (max-width: 576px) {
+    
+    .fundo{
+        background-image: url(bg52.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 60px;
+    }
+    
+}
