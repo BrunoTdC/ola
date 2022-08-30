@@ -78,7 +78,7 @@ header .container .row .col-4{
 }
 header .container .row .ani1{
    animation: animation1;
-   animation-duration: 3s;
+   animation-duration: 5s;
    animation-iteration-count: 1;
    animation-direction: inherit;
    opacity: 1 ;
@@ -87,7 +87,7 @@ header .container .row .ani1{
 }
 header .container .row .ani2{
     animation: animation2;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-direction: inherit;
     margin-left: 180px;
