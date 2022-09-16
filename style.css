@@ -82,7 +82,7 @@ header .container .row .col-12 button{
     width: 200px;       
 }
 header .container .row .col-12 button:hover{
-    transition: 0.4s;
+    transition: 1s;
     background-color: #DFB2FA;        
 }
 header .container .row .col-12 button a{
@@ -225,22 +225,21 @@ a{
  footer .container-fluid .foot2 h5{
      color: white;
      font-family: 'Staatliches', cursive;
- }
- footer .container-fluid .foot2 p{
+}
+footer .container-fluid .foot2 p{
      color: white;
      font-family: 'Cairo', sans-serif;
      font-weight: 300;
- }
- footer .container-fluid .foot3{
+}
+footer .container-fluid .foot3{
      background-color: #66417A;
      padding: 10px;
  
- }
- footer .container-fluid .foot3 p{
+}
+footer .container-fluid .foot3 p{
      text-align: center;
      color: white;
- 
- }
+}
  
 .rede{
     position: fixed;
@@ -255,6 +254,81 @@ a{
 .rede i{
     color: white;
 }
+.fundocontato{
+    background-image: url(foto4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.opacidade{
+    background-color: rgba(255, 255, 255, 0.548);
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+}
+textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+}
+label{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+.mp{
+    margin: 0 !important;
+}
+.whatsappContato{
+    text-align: center;
+    padding: 20px;
+    background-color: #0EA091;
+    border-radius: 5px;
+}
+#pagcontato .container .row .col-12 h2{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.726);
+}
+#pagcontato .container .row .col-12 h3{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.726);
+}
+#pagcontato .container .row .col-12 p{
+   font-size: 22px;    
+}
+
+#pagcontato .container .row .col-12 .whatsappContato a{
+   color: white;
+}
+#pagcontato .container .row .col-12 .whatsappContato a h2{
+    font-size: 30px;
+}
+#pagcontato .container .row .col-12 .whatsappContato {
+    text-align: start;
+}
+#pagcontato .container .row .col-12 .whatsappContato:hover{
+    transition: 1s;
+    background-color: #12c9b6;
+    padding: 40px;
+}
+.formulario{
+    background-color: #FEF4F5;
+    padding: 20px;
+}
+.endereco{
+    background-color: #FEF4F5;
+    padding: 20px;
+}
+
+
 @media (max-width: 992px) {
     .navbar .container .collapse ul{
         margin-left: 0%;
@@ -272,7 +346,7 @@ a{
     }
 }
 @media (max-width: 768px) {
-    footer .container-fluid .foot1 i{
-       margin-left: 38% ;
-   }
+    .formulario{
+        margin-top: 30px;
+    }
 }
