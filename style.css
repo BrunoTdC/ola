@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@400;700&display=swap');
+@keyframes logo {
+    from{
+        opacity: 1;
+        margin-top: 30px;
+    }
+    to{
+        opacity: 0;
+        margin-top: 0px;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: #FEF4F5;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
+}
+.navbar .container .navbar-brand{
+    text-indent: -3000px;
+}
+.navbar .container .collapse ul{
+    margin-left: 43%;    
+}
+.navbar .container .collapse button{
+    margin-left: auto;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #0EA091;
+    color: white;
+    font-family: 'Cairo', sans-serif;    
+}
+
+.fundo{
+    background-image: url(fund2.jpg);
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-position: bottom center;
+    -webkit-background-position: bottom center;
+    -moz-background-position: bottom center;
+    -ms-background-position: bottom center;
+}    
+header{
+    padding-top: 70px;
+    padding-bottom: 180px;    
+}
+
+header .container .row .col-12 h1{
+    margin-top: 40px;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Staatliches', cursive;
+    text-transform:uppercase ;
+    color: #66417a;
+}
+header .container .row .col-12 p{
+    font-size: 28px;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 50px;   
+    color: rgba(0, 0, 0, 0.699);
+}
+header .container .row .col-12 button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #0EA091;
+    border: none;
+    width: 200px;       
+}
+header .container .row .col-12 button:hover{
+    transition: 0.4s;
+    background-color: #DFB2FA;        
+}
+header .container .row .col-12 button a{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;  
+}
+header .container .row .col-sm-6{
+   height: 180px; 
+   background-image: url(LOGO.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   -ms-background-size: contain;
+   text-indent: -3000px;
+   margin-top: 30px;
+   opacity: 1;
+   /*ANIMAÇÃO*/
+   animation-name: logo;
+   -webkit-animation-name: logo;
+   -moz-animation-name: logo;
+   -ms-animation-name: logo;
+   animation-duration: 3s;
+   -webkit-animation-duration: 3s;
+   -moz-animation-duration: 3s;
+   -ms-animation-duration: 3s;
+   animation-direction: reverse;
+   -webkit-animation-direction: reverse;
+   -moz-animation-direction: reverse;
+   -ms-animation-direction: reverse;
+}
+.conteudo{
+    background-color: #FEF4F5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+}
+.tituloP{
+    margin-top: 30px;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.589);
+}
+.conteudo .container .row .col-12 .paragrafo1{
+    margin-right: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.conteudo .container .row .col-12 i{
+    margin-top: 30px;
+    color: #66417a;
+}
+.alinhar_center{
+    text-align: center;
+}
+.btn-aula-gratis{
+    font-family: 'Cairo', sans-serif;
+    padding: 8px;
+    background-color: #66417a;
+    border-radius: 8px;
+    border: none;
+}
+.btn-aula-gratis:hover{
+    background-color: #DFB2FA;
+}
+.link_aula_gratis{
+    color: white;
+}
+.link_aula_gratis:hover{
+    color: #66417a;
+}
+.conteudo .container .row .col-12 p {
+    font-family: 'Cairo', sans-serif;
+}
+.conteudo .container .row .col-12 h5 {
+    font-family: 'Staatliches', cursive;
+}
+.fundo2{
+    background-image: url(foto5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center !important;
+}
+#lista{
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+#lista .container .row .col-12 li{
+    font-weight: 400;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+#lista .container .row .col-12 i{
+    color: white;
+    font-size: 42px;
+}
+a{
+    text-decoration: none !important;
+}
+.headline, .headline2{
+    visibility: hidden;
+}
+#contato{
+    padding-top: 30px;
+    background-color: #FEF4F5;
+    padding-bottom: 30px;
+}
+#contato .container .row .col-12 div{
+    border: 2px solid #66417a;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding: 22px;
+    margin: 0 auto;
+    color: #66417a;
+    margin-top: 5px;
+}
+#contato .container .row .col-12 div:hover{
+    border: 2px solid #66417a;
+    background-color: #66417a;
+    color: white;
+    transition: 0.5s;
+}
+.iconLeft{
+    margin-left: 3px !important;
+}
+
+ footer .container-fluid .foot2{
+     background-color: #ce8af5;
+     padding: 20px;
+ 
+ }
+ footer .container-fluid .foot2 h5{
+     color: white;
+     font-family: 'Staatliches', cursive;
+ }
+ footer .container-fluid .foot2 p{
+     color: white;
+     font-family: 'Cairo', sans-serif;
+     font-weight: 300;
+ }
+ footer .container-fluid .foot3{
+     background-color: #66417A;
+     padding: 10px;
+ 
+ }
+ footer .container-fluid .foot3 p{
+     text-align: center;
+     color: white;
+ 
+ }
+ 
+.rede{
+    position: fixed;
+    padding: 10px;
+    width: 210px;
+    background-color: #0EA091;
+    text-align: center;
+    bottom: 20px;
+    right: 20px;
+    
+}
+.rede i{
+    color: white;
+}
+@media (max-width: 992px) {
+    .navbar .container .collapse ul{
+        margin-left: 0%;
+    }
+    .navbar{
+        background-color: #e0b2fa00;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+    }
+    .navbar .container .navbar-toggler i{
+        font-size: 30px;
+        color: white;
+    }
+    .margin{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    footer .container-fluid .foot1 i{
+       margin-left: 38% ;
+   }
+}
