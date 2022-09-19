@@ -14,6 +14,23 @@
         margin-top: 0px;
     }
 }
+@keyframes fundo {
+    from{
+       background-color: rgba(255, 255, 255, 0.678);
+    }
+    to{
+       background-color: rgba(255, 255, 255, 0);
+    }
+}
+@keyframes titulo {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
 
 *{
     padding: 0;
@@ -36,10 +53,36 @@
     border-radius: 15px;
     background-color: #0EA091;
     color: white;
-    font-family: 'Cairo', sans-serif;    
+    font-family: 'Cairo', sans-serif;  
+    
 }
-
 .fundo{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.678);
+    animation-name: fundo;
+   -webkit-animation-name: fundo;
+   -moz-animation-name: fundo;
+   -ms-animation-name: fundo;
+   animation-duration: 3s;
+   -webkit-animation-duration: 3s;
+   -moz-animation-duration: 3s;
+   -ms-animation-duration: 3s;
+   animation-direction: reverse;
+   -webkit-animation-direction: reverse;
+   -moz-animation-direction: reverse;
+   -ms-animation-direction: reverse;
+}
+.play{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 150%;
+    z-index: 0;
+}  
+
+/*.fundo{
     background-image: url(fund2.jpg);
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
@@ -54,25 +97,54 @@
     -webkit-background-position: bottom center;
     -moz-background-position: bottom center;
     -ms-background-position: bottom center;
-}    
+}  */  
 header{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     padding-top: 70px;
     padding-bottom: 180px;    
 }
 
 header .container .row .col-12 h1{
+    position: relative;
+    z-index: 1;
     margin-top: 40px;
     font-size: 90px;
     font-weight: 400;
     font-family: 'Staatliches', cursive;
     text-transform:uppercase ;
     color: #66417a;
+    animation-name: titulo;
+    -webkit-animation-name: titulo;
+    -moz-animation-name: titulo;
+    -ms-animation-name: titulo;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -ms-animation-direction: reverse;
 }
 header .container .row .col-12 p{
     font-size: 28px;
     font-family: 'Cairo', sans-serif;
     margin-top: 50px;   
     color: rgba(0, 0, 0, 0.699);
+    animation-name: titulo;
+    -webkit-animation-name: titulo;
+    -moz-animation-name: titulo;
+    -ms-animation-name: titulo;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -ms-animation-direction: reverse;
 }
 header .container .row .col-12 button{
     margin-top: 30px;
@@ -93,7 +165,7 @@ header .container .row .col-12 button a{
     font-size: 20px;
     font-weight: 300;  
 }
-header .container .row .col-sm-6{
+header .container .row .logoStudio{
    height: 180px; 
    background-image: url(LOGO.png);
    background-repeat: no-repeat;
@@ -119,6 +191,8 @@ header .container .row .col-sm-6{
    -ms-animation-direction: reverse;
 }
 .conteudo{
+    position: relative;
+    z-index: 2;
     background-color: #FEF4F5;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -166,6 +240,8 @@ header .container .row .col-sm-6{
     font-family: 'Staatliches', cursive;
 }
 .fundo2{
+    position: relative;
+    z-index: 3;
     background-image: url(foto5.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -173,6 +249,8 @@ header .container .row .col-sm-6{
     background-position: top center !important;
 }
 #lista{
+    position: relative;
+    z-index: 4;
     padding-top: 120px;
     padding-bottom: 80px;
     background-color: rgba(0, 0, 0, 0.815);
@@ -193,6 +271,8 @@ a{
     visibility: hidden;
 }
 #contato{
+    position: relative;
+    z-index: 4;
     padding-top: 30px;
     background-color: #FEF4F5;
     padding-bottom: 30px;
@@ -216,15 +296,21 @@ a{
 .iconLeft{
     margin-left: 3px !important;
 }
-
- footer .container-fluid .foot2{
+footer{
+    position: relative;
+    z-index: 4;
+}
+footer .container-fluid .foot2{
      background-color: #ce8af5;
      padding: 20px;
  
- }
- footer .container-fluid .foot2 h5{
+}
+footer .container-fluid .foot2 h5{
      color: white;
      font-family: 'Staatliches', cursive;
+}
+footer .container-fluid .row .col-6 i{
+    color: white;
 }
 footer .container-fluid .foot2 p{
      color: white;
@@ -242,6 +328,8 @@ footer .container-fluid .foot3 p{
 }
  
 .rede{
+    
+    z-index: 9999;  
     position: fixed;
     padding: 10px;
     width: 210px;
@@ -327,9 +415,149 @@ label{
     background-color: #FEF4F5;
     padding: 20px;
 }
+.footer_contato{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+}
+@media (max-width: 576px) {
+    @keyframes logo {
+        from{
+            opacity: 1;
+            margin-top: 30px;
+        }
+        to{
+            opacity: 0;
+            margin-top: 30px;
+        }
+    }
+    .fundo2{
+        
+        background-attachment: inherit;
+        background-position: left center !important;
+    }
+    header .container .row .logoStudio{
+        margin-top: 15px;
+       
+    }
+    header .container .row .col-12 p{
+        font-size: 28px;
+        margin-top: 60px;
+        animation: none;
+        
+    }
+    header .container .row .col-12 h1{
+        text-align: center;
+        font-size: 75px;
+        margin-top: 0px;
+        animation: none;
+        
+    }
+    header{
+        padding-top: 50px;
+        padding-bottom: 100px;    
+    }
+    .fundo{
+    background-image: url(fund2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    -webkit-background-position: bottom center;
+    -moz-background-position: bottom center;
+    -ms-background-position: bottom center;
+    animation: none;
+    } 
+   
+    .navbar .container .collapse ul{
+        margin-left: 0%;
+    }
+    .navbar{
+        background-color: #e0b2fa00;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+    }
+    .navbar .container .navbar-toggler i{
+        font-size: 30px;
+        color: white;
+    }
+    .margin{
+        margin-top: 20px;
+    }
+    .formulario{
+        margin-top: 30px;
+    }
+}
 
 
-@media (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
+    .fundo{
+        background-image: url(fund3-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom center;
+        -webkit-background-position: bottom center;
+        -moz-background-position: bottom center;
+        -ms-background-position: bottom center;
+        animation: none;
+    } 
+    .navbar .container .collapse ul{
+        margin-left: 0%;
+    }
+    .navbar{
+        background-color: #e0b2fa00;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+    }
+    .navbar .container .navbar-toggler i{
+        font-size: 30px;
+        color: white;
+    }
+    .margin{
+        margin-top: 20px;
+    }
+    .formulario{
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .fundo{
+        background-image: url(fund3-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom center;
+        -webkit-background-position: bottom center;
+        -moz-background-position: bottom center;
+        -ms-background-position: bottom center;
+        animation: none;
+    }
+    @keyframes logo {
+        from{
+            opacity: 1;
+            margin-top: 15px;
+        }
+        to{
+            opacity: 0;
+            margin-top: 15px;
+        }
+    }
+    .fundo2{        
+       background-position: left center !important;
+    }
+    header .container .row .logoStudio{
+        margin-top: 15px;
+       
+    }
+    header .container .row .col-12 p{
+        font-size: 28px;
+        margin-top: 60px;
+        animation: none;
+        
+    }
+    header .container .row .col-12 h1{
+        text-align: none;
+        font-size: 75px;
+        margin-top: 30px;
+        animation: none;
+        
+    }
     .navbar .container .collapse ul{
         margin-left: 0%;
     }
@@ -345,8 +573,5 @@ label{
         margin-top: 20px;
     }
 }
-@media (max-width: 768px) {
-    .formulario{
-        margin-top: 30px;
-    }
-}
+
+
