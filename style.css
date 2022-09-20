@@ -16,10 +16,10 @@
 }
 @keyframes fundo {
     from{
-       background-color: rgba(255, 255, 255, 0.678);
+       background-color: #66417abd;
     }
     to{
-       background-color: rgba(255, 255, 255, 0);
+       background-color: #0ea09100;
     }
 }
 @keyframes titulo {
@@ -28,6 +28,14 @@
     }
     to{
         opacity: 0;
+    }
+}
+@keyframes card {
+    from{
+        border-radius: 30px 0px 30px 0px;
+    }
+    to{
+        border-radius: 0px 30px 0px 30px;
     }
 }
 
@@ -59,7 +67,7 @@
 .fundo{
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: #66417abd;
     animation-name: fundo;
    -webkit-animation-name: fundo;
    -moz-animation-name: fundo;
@@ -97,8 +105,16 @@
     -webkit-background-position: bottom center;
     -moz-background-position: bottom center;
     -ms-background-position: bottom center;
-}  */  
-header{
+}  */
+.fundoCima{
+    position: relative;
+    z-index: 1;
+    background-image: url(fundo_liso.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+}  
+#principal{
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -106,7 +122,7 @@ header{
     padding-bottom: 180px;    
 }
 
-header .container .row .col-12 h1{
+#principal .container .row .col-12 h1{
     position: relative;
     z-index: 1;
     margin-top: 40px;
@@ -114,7 +130,7 @@ header .container .row .col-12 h1{
     font-weight: 400;
     font-family: 'Staatliches', cursive;
     text-transform:uppercase ;
-    color: #66417a;
+    color: white;
     animation-name: titulo;
     -webkit-animation-name: titulo;
     -moz-animation-name: titulo;
@@ -127,12 +143,15 @@ header .container .row .col-12 h1{
     -webkit-animation-direction: reverse;
     -moz-animation-direction: reverse;
     -ms-animation-direction: reverse;
+    text-align: center;
 }
-header .container .row .col-12 p{
+#principal .container .row .col-12 p{
+    text-align: center;
     font-size: 28px;
     font-family: 'Cairo', sans-serif;
+    font-weight: 300;
     margin-top: 50px;   
-    color: rgba(0, 0, 0, 0.699);
+    color: white;
     animation-name: titulo;
     -webkit-animation-name: titulo;
     -moz-animation-name: titulo;
@@ -146,18 +165,23 @@ header .container .row .col-12 p{
     -moz-animation-direction: reverse;
     -ms-animation-direction: reverse;
 }
-header .container .row .col-12 button{
-    margin-top: 30px;
+#principal .container .row .col-12 button{
+    margin-top: 30px ;
+    margin-left: 43% ;
     padding: 10px;
-    background-color: #0EA091;
+    background-color: #66417a00;
     border: none;
-    width: 200px;       
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+           
 }
-header .container .row .col-12 button:hover{
+#principal .container .row .col-12 button:hover{
     transition: 1s;
     background-color: #DFB2FA;        
 }
-header .container .row .col-12 button a{
+#principal .container .row .col-12 button a{
     font-family: 'Staatliches', cursive;
     color: white;
     text-decoration: none;
@@ -165,7 +189,7 @@ header .container .row .col-12 button a{
     font-size: 20px;
     font-weight: 300;  
 }
-header .container .row .logoStudio{
+#principal .container .row .logoStudio{
    height: 180px; 
    background-image: url(LOGO.png);
    background-repeat: no-repeat;
@@ -196,7 +220,7 @@ header .container .row .logoStudio{
     background-color: #FEF4F5;
     padding-top: 60px;
     padding-bottom: 60px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+    border: 5px solid #FEF4F5 ;
 }
 .tituloP{
     margin-top: 30px;
@@ -248,12 +272,34 @@ header .container .row .logoStudio{
     background-size: cover;
     background-position: top center !important;
 }
+.cartao{
+    margin: 20px auto;
+    font-family: 'Cairo', sans-serif;
+    width: 300px !important;
+    height: 200px;
+    padding: 30px;
+    background-color: #FEF4F5;
+    border-radius: 30px 0px 30px 0px;
+    animation-name: card;
+    animation-duration: 5s ;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
+}
+.cartao i{
+    margin-bottom: 15px;
+    color: #66417A !important;
+}
+
 #lista{
     position: relative;
     z-index: 4;
     padding-top: 120px;
     padding-bottom: 80px;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: #66417abd;
+}
+#lista .container .row h3{
+    margin-bottom: 30px;
 }
 #lista .container .row .col-12 li{
     font-weight: 400;
@@ -378,6 +424,9 @@ label{
     background-color: #0EA091;
     border-radius: 5px;
 }
+#pagcontato{
+    padding-bottom: 60px;
+}
 #pagcontato .container .row .col-12 h2{
     text-align: center;
     font-family: 'Staatliches', cursive;
@@ -410,13 +459,97 @@ label{
 .formulario{
     background-color: #FEF4F5;
     padding: 20px;
+    border-radius: 10px;
 }
 .endereco{
     background-color: #FEF4F5;
     padding: 20px;
+    border-radius: 10px;
+}
+form button{
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    background-color: #0EA091;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
 }
 .footer_contato{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+}
+#pagcurso{
+    margin: 120px 0px;
+}
+#pagcurso .container .row table{
+    margin: 0 auto;
+    width: 65%;
+    background-color: #fef4f5d3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
+}
+#pagcurso .container .row table thead{
+   background-color: #66417A;
+   
+}
+#pagcurso .container .row table thead th{
+    color: white;
+    font-weight: 400;
+    border-left: 1px solid #66417A;
+    border-bottom: 1px solid #66417A;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    padding: 10px;
+}
+#pagcurso .container .row table tbody tr td{
+    border-left: 2px dashed #66417A ; 
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+#pagcurso .container .row h3{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 40px;
+}
+.fundocurso{
+    background-image: url(foto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.opacidade{
+    background-color: #66417abd;
+}
+.online{
+    background-color: #66417A;
+  
+    border-radius: 10px;
+}
+.ambos{
+    background-color: #12c9b6;
+    
+    border-radius: 10px;
+}
+.presencial{
+    background-color: #ce8af5;
+   
+    border-radius: 10px;
+}
+.border_left{
+    border-left: none !important;
+}
+#chamadacurso .container .row .col-12 h3{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 40px;
+
 }
 @media (max-width: 576px) {
     @keyframes logo {
@@ -429,29 +562,37 @@ label{
             margin-top: 30px;
         }
     }
+    .fundocurso{
+        background-attachment: inherit;
+        background-size: auto;
+        background-position: center top;
+    }
+    .fundocurso .opacidade .navbar .container .collapse .navbar-nav .nav-item .nav-link{
+        color: white !important;
+    }
     .fundo2{
         
         background-attachment: inherit;
         background-position: left center !important;
     }
-    header .container .row .logoStudio{
+    #principal .container .row .logoStudio{
         margin-top: 15px;
        
     }
-    header .container .row .col-12 p{
+    #principal .container .row .col-12 p{
         font-size: 28px;
         margin-top: 60px;
         animation: none;
         
     }
-    header .container .row .col-12 h1{
+    #principal .container .row .col-12 h1{
         text-align: center;
         font-size: 75px;
         margin-top: 0px;
         animation: none;
         
     }
-    header{
+    #principal{
         padding-top: 50px;
         padding-bottom: 100px;    
     }
@@ -487,6 +628,14 @@ label{
 
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .fundocurso{
+        background-attachment: inherit;
+        background-size: auto;
+        background-position: center top;
+    }
+    .fundocurso .opacidade .navbar .container .collapse .navbar-nav .nav-item .nav-link{
+        color: white !important;
+    }
     .fundo{
         background-image: url(fund3-1.jpg);
         background-repeat: no-repeat;
@@ -517,11 +666,19 @@ label{
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    .fundocurso{
+        background-attachment: inherit;
+        background-size: auto;
+        background-position: center top;
+    }
+    .fundocurso .opacidade .navbar .container .collapse .navbar-nav .nav-item .nav-link{
+        color: white !important;
+    }
     .fundo{
         background-image: url(fund3-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: inherit;
         background-position: bottom center;
         -webkit-background-position: bottom center;
         -moz-background-position: bottom center;
@@ -538,20 +695,21 @@ label{
             margin-top: 15px;
         }
     }
-    .fundo2{        
+    .fundo2{     
+        background-attachment: inherit;   
        background-position: left center !important;
     }
-    header .container .row .logoStudio{
+    #principal .container .row .logoStudio{
         margin-top: 15px;
        
     }
-    header .container .row .col-12 p{
+    #principal .container .row .col-12 p{
         font-size: 28px;
         margin-top: 60px;
         animation: none;
         
     }
-    header .container .row .col-12 h1{
+    #principal .container .row .col-12 h1{
         text-align: none;
         font-size: 75px;
         margin-top: 30px;
