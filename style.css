@@ -1,9 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@400;700&display=swap');
+@-webkit-keyframes logo {
+    from{
+        opacity: 1;
+        margin-top: 30px;
+    }
+    to{
+        opacity: 0;
+        margin-top: 0px;
+    }
+}
 @keyframes logo {
     from{
         opacity: 1;
@@ -14,12 +31,28 @@
         margin-top: 0px;
     }
 }
+@-webkit-keyframes fundo {
+    from{
+       background-color: #66417abd;
+    }
+    to{
+       background-color: #0ea09100;
+    }
+}
 @keyframes fundo {
     from{
        background-color: #66417abd;
     }
     to{
        background-color: #0ea09100;
+    }
+}
+@-webkit-keyframes titulo {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
     }
 }
 @keyframes titulo {
@@ -30,12 +63,28 @@
         opacity: 0;
     }
 }
+@-webkit-keyframes card {
+    from{
+        border-radius: 30px 0px 30px 0px;
+    }
+    to{
+        border-radius: 0px 30px 0px 30px;
+    }
+}
 @keyframes card {
     from{
         border-radius: 30px 0px 30px 0px;
     }
     to{
         border-radius: 0px 30px 0px 30px;
+    }
+}
+@-webkit-keyframes animacao_botao1 {
+    from{
+        background-color: #10978a;
+    }
+    to{
+        background-color: #12c9b6;
     }
 }
 @keyframes animacao_botao1 {
@@ -46,12 +95,28 @@
         background-color: #12c9b6;
     }
 }
+@-webkit-keyframes animacao_botao2 {
+    from{
+        background-color: #66417A;
+    }
+    to{
+        background-color: #3d2649;
+    }
+}
 @keyframes animacao_botao2 {
     from{
         background-color: #66417A;
     }
     to{
         background-color: #3d2649;
+    }
+}
+@-webkit-keyframes animacao_botao3 {
+    from{
+        background-color: #ce8af5;
+    }
+    to{
+        background-color: #744f8a;
     }
 }
 @keyframes animacao_botao3 {
@@ -62,12 +127,29 @@
         background-color: #744f8a;
     }
 }
+@-webkit-keyframes animacao_principal {
+    from{
+        padding: 0px;
+    }
+    to{
+        padding: 15px;
+    }
+}
 @keyframes animacao_principal {
     from{
         padding: 0px;
     }
     to{
         padding: 15px;
+    }
+}
+@-webkit-keyframes animacao_principal2 {
+    from{
+        font-size: 30px;
+    }
+    to{
+        font-size: 25px;
+        background-color: #ce8af5;
     }
 }
 @keyframes animacao_principal2 {
@@ -87,7 +169,8 @@
 }
 .navbar{
     background-color: #FEF4F5;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
 }
 .navbar .container .navbar-brand{
     text-indent: -3000px;
@@ -126,27 +209,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 150%;
     z-index: 0;
 }  
 
-/*.fundo{
-    background-image: url(fund2.jpg);
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -ms-background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    background-position: bottom center;
-    -webkit-background-position: bottom center;
-    -moz-background-position: bottom center;
-    -ms-background-position: bottom center;
-}  */
 .fundoCima{
     position: relative;
     z-index: 1;
@@ -172,18 +240,11 @@
     font-family: 'Staatliches', cursive;
     text-transform:uppercase ;
     color: white;
-    animation-name: titulo;
     -webkit-animation-name: titulo;
-    -moz-animation-name: titulo;
-    -ms-animation-name: titulo;
-    animation-duration: 3s;
+            animation-name: titulo;
     -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -ms-animation-duration: 3s;
+            animation-duration: 3s;
     animation-direction: reverse;
-    -webkit-animation-direction: reverse;
-    -moz-animation-direction: reverse;
-    -ms-animation-direction: reverse;
     text-align: center;
 }
 #principal .container .row .col-12 p{
@@ -193,18 +254,11 @@
     font-weight: 300;
     margin-top: 50px;   
     color: white;
-    animation-name: titulo;
     -webkit-animation-name: titulo;
-    -moz-animation-name: titulo;
-    -ms-animation-name: titulo;
-    animation-duration: 3s;
+            animation-name: titulo;
     -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -ms-animation-duration: 3s;
+            animation-duration: 3s;
     animation-direction: reverse;
-    -webkit-animation-direction: reverse;
-    -moz-animation-direction: reverse;
-    -ms-animation-direction: reverse;
     margin-bottom: 60px;
 }
 #principal .container .row .col-12 button{
@@ -213,10 +267,13 @@
     width: 100%;
     border: 2px solid white;
     border-radius: 50px;
-    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+    -webkit-box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+            box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
            
 }
 #principal .container .row .col-12 button:hover{
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     background-color: #DFB2FA;        
 }
@@ -240,18 +297,11 @@
    margin-top: 30px;
    opacity: 1;
    /*ANIMAÇÃO*/
-   animation-name: logo;
    -webkit-animation-name: logo;
-   -moz-animation-name: logo;
-   -ms-animation-name: logo;
-   animation-duration: 3s;
+           animation-name: logo;
    -webkit-animation-duration: 3s;
-   -moz-animation-duration: 3s;
-   -ms-animation-duration: 3s;
+           animation-duration: 3s;
    animation-direction: reverse;
-   -webkit-animation-direction: reverse;
-   -moz-animation-direction: reverse;
-   -ms-animation-direction: reverse;
 }
 .btn_saiba{
     width: 200px;
@@ -323,12 +373,17 @@
     padding: 20px;
     background-color: #fef4f500;
     border: 2px solid #FEF4F5 ;
-    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+    -webkit-box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+            box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
     border-radius: 30px 0px 30px 0px;
-    animation-name: card;
-    animation-duration: 5s ;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: card;
+            animation-name: card;
+    -webkit-animation-duration: 5s ;
+            animation-duration: 5s ;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     color: white;
     font-size: 20px;
    
@@ -362,6 +417,7 @@ a{
 }
 .headline, .headline2{
     visibility: hidden;
+    
 }
 #contato{
     position: relative;
@@ -384,6 +440,8 @@ a{
     border: 2px solid #66417a;
     background-color: #66417a;
     color: white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .iconLeft{
@@ -453,6 +511,18 @@ input{
     border-radius: 10px;
     
 }
+input::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+input::-moz-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+input:-ms-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+input::-ms-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
 input::placeholder{
     color: rgba(255, 255, 255, 0.74);
 }
@@ -463,6 +533,18 @@ textarea{
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid white;
     border-radius: 10px;
+}
+textarea::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+textarea::-moz-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+textarea:-ms-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
+}
+textarea::-ms-input-placeholder{
+    color: rgba(255, 255, 255, 0.74);
 }
 textarea::placeholder{
     color: rgba(255, 255, 255, 0.74);
@@ -514,6 +596,8 @@ label{
     text-align: start;
 }
 #pagcontato .container .row .col-12 .whatsappContato:hover{
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     background-color: #12c9b6;
     padding: 40px;
@@ -521,14 +605,16 @@ label{
 .formulario{
     background-color: #66417ac2;
     border: 2px solid #FEF4F5;
-    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+    -webkit-box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+            box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
     padding: 20px;
     border-radius: 10px;
 }
 .endereco{
     background-color: #66417ac2;
     border: 2px solid #FEF4F5;
-    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+    -webkit-box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+            box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
     padding: 20px;
     border-radius: 10px;
 }
@@ -543,7 +629,8 @@ form button{
     border-radius: 5px;
 }
 .footer_contato{
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
 }
 #pagcurso{
     margin: 120px 0px;
@@ -554,7 +641,8 @@ form button{
     background-color: #fef4f533;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.504);   
 }
 #pagcurso .container .row table thead{
    background-color: #66417A;
@@ -620,26 +708,38 @@ form button{
 }
 .animation_btn{
     background-color: #12c9b6;
-    animation-name: animacao_botao1;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-animation-name: animacao_botao1;
+            animation-name: animacao_botao1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     
 }
 .animation_btn2{
     background-color: #66417A;
-    animation-name: animacao_botao2;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-animation-name: animacao_botao2;
+            animation-name: animacao_botao2;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     
 }
 .animation_btn3{
     background-color: #ce8af5;
-    animation-name: animacao_botao3;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-animation-name: animacao_botao3;
+            animation-name: animacao_botao3;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     
 }
 .botao_agenda{
@@ -688,10 +788,14 @@ form button{
     margin: 60px auto;
     height: 120px;
     padding: 15px;
-    animation-name: animacao_principal;
-    animation-duration: 1.4s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: animacao_principal;
+            animation-name: animacao_principal;
+    -webkit-animation-duration: 1.4s;
+            animation-duration: 1.4s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     
 }
 #chamadacurso .container .row .col-12 button{
@@ -706,11 +810,16 @@ form button{
     font-weight: 900;
     color: white; 
     background-color: #0ea09100;
-    box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
-    animation-name: animacao_principal2;
-    animation-duration: 1.4s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    -webkit-box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+            box-shadow: 1px 1px 10px rgba(14, 14, 14, 0.733);
+    -webkit-animation-name: animacao_principal2;
+            animation-name: animacao_principal2;
+    -webkit-animation-duration: 1.4s;
+            animation-duration: 1.4s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     
     
     
@@ -719,6 +828,16 @@ form button{
 }
 
 @media (max-width: 576px) {
+    @-webkit-keyframes logo {
+        from{
+            opacity: 1;
+            margin-top: 30px;
+        }
+        to{
+            opacity: 0;
+            margin-top: 30px;
+        }
+    }
     @keyframes logo {
         from{
             opacity: 1;
@@ -759,7 +878,8 @@ form button{
     #principal .container .row .col-12 p{
         font-size: 28px;
         margin-top: 60px;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
         margin-bottom: 20px;
         
     }
@@ -767,7 +887,8 @@ form button{
         text-align: center;
         font-size: 75px;
         margin-top: 0px;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
         
     }
     #principal{
@@ -779,10 +900,8 @@ form button{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    -webkit-background-position: bottom center;
-    -moz-background-position: bottom center;
-    -ms-background-position: bottom center;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
     } 
     .btn_saiba{
        margin: 60px auto;
@@ -792,7 +911,8 @@ form button{
     }
     .navbar{
         background-color: #e0b2fa00;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
     }
     .navbar .container .navbar-toggler i{
         font-size: 30px;
@@ -826,17 +946,16 @@ form button{
         background-size: cover;
         background-attachment: fixed;
         background-position: bottom center;
-        -webkit-background-position: bottom center;
-        -moz-background-position: bottom center;
-        -ms-background-position: bottom center;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
     } 
     .navbar .container .collapse ul{
         margin-left: 0%;
     }
     .navbar{
         background-color: #e0b2fa00;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
     }
     .navbar .container .navbar-toggler i{
         font-size: 30px;
@@ -868,10 +987,18 @@ form button{
         background-size: cover;
         background-attachment: inherit;
         background-position: bottom center;
-        -webkit-background-position: bottom center;
-        -moz-background-position: bottom center;
-        -ms-background-position: bottom center;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
+    }
+    @-webkit-keyframes logo {
+        from{
+            opacity: 1;
+            margin-top: 15px;
+        }
+        to{
+            opacity: 0;
+            margin-top: 15px;
+        }
     }
     @keyframes logo {
         from{
@@ -894,14 +1021,16 @@ form button{
     #principal .container .row .col-12 p{
         font-size: 28px;
         margin-top: 60px;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
         
     }
     #principal .container .row .col-12 h1{
         text-align: none;
         font-size: 75px;
         margin-top: 30px;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
         
     }
     .navbar .container .collapse ul{
@@ -909,7 +1038,8 @@ form button{
     }
     .navbar{
         background-color: #e0b2fa00;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.504);   
     }
     .navbar .container .navbar-toggler i{
         font-size: 30px;
@@ -919,5 +1049,6 @@ form button{
         margin-top: 20px;
     }
 }
+
 
 
