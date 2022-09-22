@@ -417,7 +417,7 @@ a{
 }
 .headline, .headline2{
     visibility: hidden;
-    
+    -webkit-overflow-scrolling: touch
 }
 #contato{
     position: relative;
