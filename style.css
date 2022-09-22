@@ -848,6 +848,9 @@ form button{
             margin-top: 30px;
         }
     }
+    .headline, .headline2{
+        visibility: initial;
+    }
     .fundocontato{
         background-image: url(fund3-1.jpg);
         background-repeat: no-repeat;
@@ -928,6 +931,9 @@ form button{
 
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .headline, .headline2{
+        visibility: initial;
+    }
     .fundocurso{
         background-image: none;        
     }
@@ -969,6 +975,9 @@ form button{
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    .headline, .headline2{
+        visibility: initial;
+    }
     .fundocurso{
         background-image: none;        
     }
